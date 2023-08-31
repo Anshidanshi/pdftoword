@@ -12,18 +12,18 @@ This is a Django project that provides a simple web interface to convert PDF fil
    cd your-pdf-to-word-conversion-project
 Create and activate a virtual environment:
 
-bash
+```bash
 Copy code
 python -m venv venv
 source venv/bin/activate
 Install the project dependencies:
 
-bash
+```bash
 Copy code
 pip install -r requirements.txt
 Apply migrations to set up the database:
 
-bash
+```bash
 Copy code
 python manage.py migrate
 Start the development server:
@@ -38,7 +38,7 @@ Upload a PDF file using the provided form.
 After successful conversion, you'll receive a short code and a download link for the corresponding Word document.
 Use the short code to download the converted Word document.
 Project Structure
-yourapp/ - Django app directory containing the main project logic.
+home/ - Django app directory containing the main project logic.
 views.py - Contains views for PDF to Word conversion and related functionality.
 models.py - Defines the ConvertedFile model for storing PDF and converted Word files.
 templates/ - HTML templates for rendering the user interface.
